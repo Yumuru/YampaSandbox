@@ -23,8 +23,9 @@ dependencies:
 - base >= 4.7 && < 5
 - Yampa
 - QuickCheck
-- gloss
 - simple-affine-space
+- random
+- gloss
 
 library:
   source-dirs: src

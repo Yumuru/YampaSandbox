@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 1190b43bccc2d23a0010c58a23da78658fbf33288826dbc39a69a5879f19dcbb
+-- hash: b032d2883ad768211de7b3f81220d67e9a7e8a517684652f145b5d459c428f2c
 
 name:           HsSandbox
 version:        0.1.0.0
@@ -28,7 +28,12 @@ source-repository head
 library
   exposed-modules:
       Graphics.Gloss.Interface.FRP.Yampa
-      Test
+      IdentityList
+      Input
+      Object
+      ObjectBehavior
+      PhysicalDimensions
+      RenderObject
   other-modules:
       Paths_HsSandbox
   hs-source-dirs:
@@ -38,6 +43,7 @@ library
     , Yampa
     , base >=4.7 && <5
     , gloss
+    , random
     , simple-affine-space
   default-language: Haskell2010
 
@@ -54,6 +60,7 @@ executable HsSandbox-exe
     , Yampa
     , base >=4.7 && <5
     , gloss
+    , random
     , simple-affine-space
   default-language: Haskell2010
 
@@ -71,5 +78,6 @@ test-suite HsSandbox-test
     , Yampa
     , base >=4.7 && <5
     , gloss
+    , random
     , simple-affine-space
   default-language: Haskell2010
